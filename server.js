@@ -22,7 +22,7 @@ const upload = multer({ storage: storage }).single('file');
 app.use(express.json());
 
 // Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname)));
 
 // Define a route for the root URL
 app.get('/', (req, res) => {
